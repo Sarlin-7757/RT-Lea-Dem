@@ -1,4 +1,5 @@
 #include "Vector3D.hpp"
+#include<iostream>
 #include<cmath>
 
 Vector3D::Vector3D(): x(0), y(0) , z(0) {}; // default constructor 
@@ -36,4 +37,11 @@ Vector3D Vector3D::normalize()const{
   return Vector3D(this->x/length , 
                   this->y/length , 
                   this->z/length);
+}
+
+
+void Vector3D::display_vector()const {
+  std::cout << "x: " << this-> x << std::endl;
+  std::cout << "y: " << this->y << std::endl;
+  std::cout << "z: " << this->z << std::endl;
 }

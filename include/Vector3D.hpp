@@ -26,6 +26,8 @@ class Vector3D{
     double dot_product(const Vector3D& v)const;
     Vector3D cross_product(const Vector3D& v)const;
     Vector3D normalize()const;
+
+    void display_vector()const;
 };
 
 #endif
